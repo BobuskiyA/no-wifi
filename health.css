@@ -112,17 +112,9 @@ h1 {
     }
 
     .hero__buttom::before {
-    content: '';
-    position: absolute;
     left: -22vw;
-    top: 50%;
-    transform: translateY(-50%);
     width: 40vw;
     height: 40vw;
-    background-image: url(image/wifi.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 
@@ -146,17 +138,9 @@ h1 {
     }
 
     .hero__buttom::before {
-    content: '';
-    position: absolute;
     left: -25vw;
-    top: 50%;
-    transform: translateY(-50%);
     width: 50vw;
     height: 50vw;
-    background-image: url(image/wifi.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 
