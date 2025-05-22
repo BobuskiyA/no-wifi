@@ -140,4 +140,27 @@ h1 {
     .hero {
         background-image: url('image/mobile.jpg');
     }
+
+    .hero__title {
+        margin-top: 45vw;
+        font-size: 7vw;
+        width: 50%;
+        left: -20%;
+    }
+
+    .hero__line-wrapper::after {
+        height: 0.7vw;
+    }
+
+    .hero__text {
+        font-size: 8vw;
+        margin-top: 66vw;
+    }
+
+    .hero__buttom {
+        margin-top: 8vw;
+        font-size: 5vw;
+        padding: 3vw 3vw;
+    }
+
 }
