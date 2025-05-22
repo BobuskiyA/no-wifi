@@ -63,6 +63,7 @@ h1 {
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 .hero__title {
@@ -70,6 +71,8 @@ h1 {
     font-size: 3vw;
     justify-content: center;
     margin-top: 8vw;
+    font-weight: 900;
+    position: relative;
 }
 
 .hero__line-wrapper {
@@ -106,4 +109,35 @@ h1 {
     background-color: #fff;
     border-radius: 10px;
     margin-top: 2vw;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .hero {
+        background-image: url('image/tablet.jpg');
+    }
+
+    .hero__title {
+        margin-top: 21vw;
+        font-size: 5vw;
+        width: 55%;
+        left: -20%;
+    }
+
+    .hero__text {
+        margin-top: 42vw;
+        font-size: 5vw;
+    }
+
+    .hero__buttom {
+        margin-top: 6vw;
+        font-size: 3vw;
+    }
+
+}
+
+/* Мобільна версія: до 767px */
+@media (max-width: 767px) {
+    .hero {
+        background-image: url('image/mobile.jpg');
+    }
 }
