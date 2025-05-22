@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Black.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* рекомендовано для покращення швидкості */
+}
+
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4e9dd6;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    /* прибирає підкреслення */
+    color: inherit;
+    /* успадковує колір тексту від батьківського елемента */
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    /* скасовує жирність, якщо потрібно */
+    font-size: inherit;
+    /* успадковує розмір шрифта від батьківського елемента */
+    line-height: 1;
+    /* встановлює щільність рядка, можна адаптувати */
+}
+
+
+.hero {
+    background-image: url('image/comp.jpg');
+    /* шлях до зображення */
+    background-size: cover;
+    /* забезпечує покриття всього екрана */
+    background-position: center;
+    /* центрує зображення */
+    background-repeat: no-repeat;
+    /* не повторювати зображення */
+    width: 100vw;
+    /* ширина на всю видиму частину екрана */
+    height: 100vh;
+    /* висота на весь екран */
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center
+}
+
+.hero__title {
+    display: inline-block;
+    font-size: 3vw;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.hero__line-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.hero__line-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 0.4vw;
+    width: 100%;
+    background-color: currentColor;
+}
+
+.hero__line-text {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.hero__text {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    margin-top: 14vw;
+
+}
+
+.hero__buttom {
+    padding: 2vw 3vw;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 3vw;
+}
